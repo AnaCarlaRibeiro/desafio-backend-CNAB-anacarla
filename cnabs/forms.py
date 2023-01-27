@@ -1,8 +1,16 @@
 from django import forms
+from .models import ArquivoModel
+from  django.db import models
 
-class UploadFileForm(forms.Form):
-    title = forms.CharField(max_length=50)
-    file = forms.FileField()
+
+
+class FileForm(models.Model):
+    file = models.FileField()
+
+class UploadFileForm(forms.ModelForm):
+    class Meta:
+        model= FileForm
+        fields= "__all__"
     
     
     
@@ -10,20 +18,3 @@ class UploadFileForm(forms.Form):
 
 
 
-
-# from .models import UploadFileForm
-# from django.forms import forms
-
-
-
-
-
-# class ClienteForm(forms.ModalForm):
-#     name = forms.Charfield(label='Names')
-#     file = forms.FileField()
-    
-    
-# class Cliente(forms.Form):
-#     class Meta:
-#         model:UploadFileForm
-#         fields= "__all__"
