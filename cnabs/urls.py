@@ -19,4 +19,6 @@ from . import views
 
 urlpatterns = [  
   path("", views.upload),
+  path("tabela_dados/", views.tabela_dados),
+  
 ]
