@@ -9,7 +9,18 @@ Consiste em parsear dados CNAB e salvar suas informações no banco de dados.
 
 Foi necessário a utilização do framework Django escrito em Python.
 <br>
-Ao executar o clone do repositório analise na pasta requeriments dependencias necessárias para o bom funcionamento
+<ol>
+<li> Clone do repositório</li>
+<li> Iniciar e ativar do ambiente virtual(venv)
+<p>bash</p>
+<p> python -m venv venv  </p>
+<p> source venv/bin/activate  </p>
+</li>
+<li> </li>
+</ol>
+
+Para instalar as dependências com o seguinte comando:
+pip install -r requirements.txt
 <br>
 
 **Uso**
